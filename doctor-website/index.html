@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Rajesh Kumar - Leading Cardiologist in India</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <i class="fas fa-heart"></i>
+                <span>Dr. Rajesh Kumar</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#blog" class="nav-link">Blog</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><button class="btn-appointment" onclick="scrollToAppointment()">Book Appointment</button></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome to Dr. Rajesh Kumar's Clinic</h1>
+            <p>Providing Excellence in Cardiac Care for Over 20 Years</p>
+            <button class="btn-primary" onclick="scrollToAppointment()">Book Your Appointment Now</button>
+        </div>
+        <div class="hero-image">
+            <img src="https://via.placeholder.com/500x600?text=Dr.+Rajesh+Kumar" alt="Dr. Rajesh Kumar">
+        </div>
+    </section>
+
+    <!-- Quick Contact Bar -->
+    <section class="quick-contact">
+        <div class="container">
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                    <p>Call Us</p>
+                    <strong>+91-9876543210</strong>
+                </div>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                    <p>Email</p>
+                    <strong>dr.rajesh@cardiac.com</strong>
+                </div>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <p>Location</p>
+                    <strong>New Delhi, India</strong>
+                </div>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-whatsapp"></i>
+                <div>
+                    <p>WhatsApp</p>
+                    <strong>+91-9876543210</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Dr. Rajesh Kumar</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Your Trusted Cardiac Specialist</h3>
+                    <p>Dr. Rajesh Kumar is a highly qualified and experienced cardiologist with over 20 years of expertise in treating various cardiac conditions. He has successfully performed over 5000+ cardiac procedures and has helped thousands of patients achieve better heart health.</p>
+                    
+                    <h4>Qualifications & Credentials</h4>
+                    <ul class="credentials">
+                        <li><i class="fas fa-check"></i> MBBS - Delhi Medical College</li>
+                        <li><i class="fas fa-check"></i> MD (Internal Medicine) - AIIMS Delhi</li>
+                        <li><i class="fas fa-check"></i> DM (Cardiology) - Fortis Healthcare</li>
+                        <li><i class="fas fa-check"></i> Fellowship in Interventional Cardiology - USA</li>
+                        <li><i class="fas fa-check"></i> Member of Indian Medical Association</li>
+                        <li><i class="fas fa-check"></i> Member of Cardiological Society of India</li>
+                    </ul>
+                    
+                    <h4>Achievements</h4>
+                    <ul class="credentials">
+                        <li><i class="fas fa-award"></i> Best Cardiologist Award 2022</li>
+                        <li><i class="fas fa-award"></i> Featured in Times of India</li>
+                        <li><i class="fas fa-award"></i> Patient Choice Award 2021</li>
+                        <li><i class="fas fa-award"></i> Excellence in Healthcare Award</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/400x500?text=Dr.+Rajesh" alt="Dr. Rajesh Kumar">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-heartbeat"></i>
+                    <h3>General Cardiac Checkup</h3>
+                    <p>Comprehensive cardiac examination including ECG, echocardiography, and stress testing to assess your heart health.</p>
+                    <a href="#" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-stethoscope"></i>
+                    <h3>Coronary Angiography</h3>
+                    <p>Advanced diagnostic procedure to visualize coronary arteries and identify blockages or abnormalities.</p>
+                    <a href="#" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-microscope"></i>
+                    <h3>Angioplasty & Stenting</h3>
+                    <p>Minimally invasive intervention to restore blood flow through narrowed or blocked coronary arteries.</p>
+                    <a href="#" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-pill"></i>
+                    <h3>Arrhythmia Management</h3>
+                    <p>Specialized treatment for irregular heartbeats including medication and cardiac device implantation.</p>
+                    <a href="#" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-heart-pulse"></i>
+                    <h3>Heart Failure Treatment</h3>
+                    <p>Comprehensive management of heart failure with advanced medications and lifestyle counseling.</p>
+                    <a href="#" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-dumbbell"></i>
+                    <h3>Preventive Cardiology</h3>
+                    <p>Preventive care and lifestyle modification programs to reduce cardiac risk factors.</p>
+                    <a href="#" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Patients Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Dr. Rajesh is an exceptionally skilled and compassionate doctor. He explained everything clearly and made me feel confident about my treatment. I'm grateful for his expertise and care."</p>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/60x60?text=Patient" alt="Patient">
+                        <div>
+                            <h4>Rajesh Sharma</h4>
+                            <p>Heart Patient</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"After my angioplasty, Dr. Rajesh provided excellent post-operative care. His staff is professional and the clinic is very hygienic. Highly recommended for anyone seeking cardiac care."</p>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/60x60?text=Patient" alt="Patient">
+                        <div>
+                            <h4>Priya Verma</h4>
+                            <p>Post-Operative Patient</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"I came to Dr. Rajesh with severe chest pain and anxiety. He took time to explain my condition and provided a comprehensive treatment plan. I'm much better now and very grateful."</p>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/60x60?text=Patient" alt="Patient">
+                        <div>
+                            <h4>Amit Kumar Singh</h4>
+                            <p>Regular Patient</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h4>What should I do if I experience chest pain?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>If you experience chest pain, it's important to seek medical attention immediately. Call emergency services or visit the nearest hospital. Contact us for urgent consultation with Dr. Rajesh.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h4>How often should I have a cardiac checkup?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>For preventive care, a cardiac checkup once a year is recommended for adults above 40 years. However, if you have risk factors or existing conditions, more frequent checkups may be necessary.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h4>Is angioplasty a safe procedure?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, angioplasty is a safe and minimally invasive procedure when performed by experienced cardiologists. Modern techniques and equipment have made it even safer with faster recovery times.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h4>What are the risk factors for heart disease?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Common risk factors include high blood pressure, high cholesterol, smoking, obesity, diabetes, stress, and family history. Dr. Rajesh can assess your individual risk factors and provide preventive measures.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h4>Can heart disease be prevented?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Many heart diseases can be prevented through healthy lifestyle choices including regular exercise, healthy diet, stress management, and avoiding smoking. Regular checkups are also crucial.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h4>Do you offer teleconsultation?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer online teleconsultation for follow-up appointments and general consultations. Please contact our clinic to schedule a video consultation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog" id="blog">
+        <div class="container">
+            <h2 class="section-title">Latest Articles & Tips</h2>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <img src="https://via.placeholder.com/300x200?text=Heart+Health" alt="Article">
+                    <div class="blog-content">
+                        <h3>5 Ways to Maintain a Healthy Heart</h3>
+                        <p class="blog-date"><i class="fas fa-calendar"></i> June 15, 2024</p>
+                        <p>Discover the essential habits and lifestyle changes that can help you maintain optimal heart health. From exercise to diet, learn what works best...</p>
+                        <a href="#" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <img src="https://via.placeholder.com/300x200?text=Stress+Management" alt="Article">
+                    <div class="blog-content">
+                        <h3>Stress Management for Heart Health</h3>
+                        <p class="blog-date"><i class="fas fa-calendar"></i> June 10, 2024</p>
+                        <p>Chronic stress is a major risk factor for heart disease. Learn effective stress management techniques recommended by cardiologists...</p>
+                        <a href="#" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <img src="https://via.placeholder.com/300x200?text=Healthy+Diet" alt="Article">
+                    <div class="blog-content">
+                        <h3>Best Diet for Cardiac Patients</h3>
+                        <p class="blog-date"><i class="fas fa-calendar"></i> June 5, 2024</p>
+                        <p>A heart-healthy diet is crucial for managing cardiac conditions. Dr. Rajesh shares expert recommendations on nutrition and food choices...</p>
+                        <a href="#" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Booking Section -->
+    <section class="appointment" id="appointment">
+        <div class="container">
+            <h2 class="section-title">Book Your Appointment</h2>
+            <div class="appointment-content">
+                <div class="appointment-info">
+                    <h3>Why Choose Dr. Rajesh Kumar?</h3>
+                    <ul class="benefits">
+                        <li><i class="fas fa-check-circle"></i> 20+ Years of Experience</li>
+                        <li><i class="fas fa-check-circle"></i> 5000+ Successful Procedures</li>
+                        <li><i class="fas fa-check-circle"></i> Modern Equipment & Facilities</li>
+                        <li><i class="fas fa-check-circle"></i> Compassionate Patient Care</li>
+                        <li><i class="fas fa-check-circle"></i> Affordable Treatment Plans</li>
+                        <li><i class="fas fa-check-circle"></i> Quick Appointment Scheduling</li>
+                    </ul>
+                </div>
+                <form class="appointment-form" onsubmit="handleFormSubmit(event)">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                    <input type="tel" placeholder="Phone Number" required>
+                    <select required>
+                        <option value="">Select Service</option>
+                        <option value="checkup">General Cardiac Checkup</option>
+                        <option value="angiography">Coronary Angiography</option>
+                        <option value="angioplasty">Angioplasty & Stenting</option>
+                        <option value="arrhythmia">Arrhythmia Management</option>
+                        <option value="heart-failure">Heart Failure Treatment</option>
+                        <option value="preventive">Preventive Cardiology</option>
+                    </select>
+                    <input type="date" required>
+                    <textarea placeholder="Message (Optional)"></textarea>
+                    <button type="submit" class="btn-primary">Book Appointment</button>
+                    <p class="form-note">We'll confirm your appointment within 24 hours</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <h2 class="section-title">Our Clinic Facilities</h2>
+            <div class="gallery-grid">
+                <img src="https://via.placeholder.com/400x300?text=Operation+Theatre" alt="Operation Theatre">
+                <img src="https://via.placeholder.com/400x300?text=Reception+Area" alt="Reception">
+                <img src="https://via.placeholder.com/400x300?text=Patient+Rooms" alt="Patient Rooms">
+                <img src="https://via.placeholder.com/400x300?text=Diagnostic+Center" alt="Diagnostic Center">
+                <img src="https://via.placeholder.com/400x300?text=Conference+Room" alt="Conference Room">
+                <img src="https://via.placeholder.com/400x300?text=Recovery+Ward" alt="Recovery Ward">
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Indicators -->
+    <section class="trust-indicators">
+        <div class="container">
+            <div class="indicator-item">
+                <h3>5000+</h3>
+                <p>Successful Procedures</p>
+            </div>
+            <div class="indicator-item">
+                <h3>15000+</h3>
+                <p>Happy Patients</p>
+            </div>
+            <div class="indicator-item">
+                <h3>20+</h3>
+                <p>Years Experience</p>
+            </div>
+            <div class="indicator-item">
+                <h3>98%</h3>
+                <p>Patient Satisfaction</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4><i class="fas fa-heart"></i> Dr. Rajesh Kumar</h4>
+                    <p>Providing excellence in cardiac care with compassion and expertise.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#appointment">Appointments</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Information</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +91-9876543210</li>
+                        <li><i class="fas fa-envelope"></i> dr.rajesh@cardiac.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> New Delhi, India</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 9AM-6PM</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for health tips and updates</p>
+                    <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dr. Rajesh Kumar. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
